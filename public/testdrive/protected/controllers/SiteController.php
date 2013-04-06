@@ -27,6 +27,11 @@ class SiteController extends Controller
 	 */
 	public function actionIndex()
 	{
+        /* echo "<pre>";
+        print_r(Yii::app()->db);
+        echo "</pre>";
+        exit; */
+        
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
 		$this->render('index');
