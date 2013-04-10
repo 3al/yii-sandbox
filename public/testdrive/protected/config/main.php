@@ -9,7 +9,17 @@ return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Мое супер YII приложение',
     'defaultController'=>'site',
-	
+	'controllerMap'=>array(
+        'album'=>array(
+            'class'=>'application.controllers.custompath.AlbumController',
+            'pageTitle'=>'something new',
+        ),
+        'offline'=>array(
+            'class'=>'application.controllers.custompath.OfflineController',
+            'pageTitle'=>'something new',
+        ),
+    ),
+    
     // если установлено - перехватывает все запросы и пересылает на указанный контроллер и действие
     /* 'catchAllRequest' =>array(
         'offline/index',
@@ -78,13 +88,13 @@ return array(
 			'errorAction'=>'site/error',
 		),
 		'log'=>array(
+            'enabled' => true,
 			'class'=>'CLogRouter',
 			'routes'=>array(
 				array(
 					'class'=>'CFileLogRoute',
 					'levels'=>'error, warning',
 				),
-                
 				// показывать лог на странице сайта
 				array(
 					'class'=>'CWebLogRoute',
@@ -93,6 +103,11 @@ return array(
 				
 			),
 		),
+        'urlManager'=>array(
+            'class'=>'CUrlManager',
+            //отменяем чувствительность маршрутов к регистру
+            'caseSensitive'=>false
+        )
 	),
 
 	// application-level parameters that can be accessed
