@@ -107,6 +107,9 @@ return array(
             'class'=>'CUrlManager',
             //отменяем чувствительность маршрутов к регистру
             'caseSensitive'=>false
+        ),
+        'fooBar'=>array(
+            'class' => 'application.components.FooBar'
         )
 	),
 

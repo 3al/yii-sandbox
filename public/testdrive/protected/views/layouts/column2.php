@@ -16,7 +16,16 @@
 			'htmlOptions'=>array('class'=>'operations'),
 		));
 		$this->endWidget();
-	?>
+        
+        $this->widget(
+            'application.widgets.MTestWidget',
+            array(
+                'color' => 'lightblue',
+                'width' => '150px',
+                'height' => '200px'
+            )
+        ); 
+    ?>
 	</div><!-- sidebar -->
 </div>
 <?php $this->endContent(); ?>
