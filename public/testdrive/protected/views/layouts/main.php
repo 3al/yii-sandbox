@@ -34,7 +34,8 @@
 				array('label'=>'Выйти ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'Контакты', 'url'=>array('/site/contact')),
 				array('label'=>'Альбомы', 'url'=>array('/album/index')),
-				array('label'=>'Добавление альбома', 'url'=>array('/album/add'))
+				array('label'=>'Добавление альбома', 'url'=>array('/album/add')),
+				array('label'=>'Поведения', 'url'=>array('/album/behaviors'))
 			),
 		)); ?>
 	</div><!-- mainmenu -->

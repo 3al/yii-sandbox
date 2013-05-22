@@ -112,7 +112,11 @@ return array(
             'class' => 'application.components.FooBar'
         )
 	),
-
+    'behaviors' => array(
+        'test' => array(
+            'class' => 'application.behaviors.TestBehavior'
+        )
+    ),
 	// application-level parameters that can be accessed
 	// using Yii::app()->params['paramName']
 	'params'=>array(
