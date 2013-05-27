@@ -50,6 +50,9 @@ return array(
             // так чтобы отменить все фильтры по ip
             'ipFilters'=>array(),
 		),
+        'admin'=>array(
+            'any_common_option' => 'value'
+        )
 		
 	),
 
